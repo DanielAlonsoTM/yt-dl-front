@@ -9,7 +9,7 @@ touch .env.local
 ```
 
 2. Set the API Url in `.env.local`
-```bash
+```properties
 NEXT_PUBLIC_API_URL=YOUR_API_URL
 ```
 
