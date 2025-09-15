@@ -2,6 +2,17 @@
 Description for app.
 
 ## Configuration
+### Setup `.env` file
+1. Create file `.env.local` in the root path project
+```bash
+touch .env.local
+```
+
+2. Set the API Url in `.env.local`
+```bash
+NEXT_PUBLIC_API_URL=YOUR_API_URL
+```
+
 ### Installation for local develop
 1. Install dependencies
 ```bash
