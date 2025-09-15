@@ -23,14 +23,21 @@ npm install
 ```bash
 npm run dev
 ```
-
-### Build docker image
-1. Build image
+## Build docker image
+## Run locally docker
 ```bash
+# Build docker image
 docker build -t yt-dl-front .
+
+# Run docker image
+docker run -p 3000:3000 yt-dl-front
 ```
 
-2. Run image
+## Publish image
 ```bash
-docker run -p 3000:3000 yt-dl-front
+# Build image in repository
+docker build -t <DOCKER_USER>/yt-dl-front .
+
+# Push image in repository
+docker push <DOCKER_USER>/yt-dl-front
 ```
