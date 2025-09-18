@@ -1,43 +1,53 @@
 # YT-DL-FRONT
-Description for app.
 
-## Configuration
-### Setup `.env` file
-1. Create file `.env.local` in the root path project
+A frontend application for managing YouTube downloads.
+
+---
+
+## 📋 Configuration
+
+### 1. Setup `.env` file
+1. Create a `.env.local` file in the project root:
 ```bash
 touch .env.local
 ```
 
-2. Set the API Url in `.env.local`
-```properties
+### 2. Set the API URL inside .env.local:
 NEXT_PUBLIC_API_URL=YOUR_API_URL
-```
 
-### Installation for local develop
+---
+
+## 🚀 Running Locally (without Docker)
 1. Install dependencies
 ```bash
 npm install
 ```
 
-2. Run app in develop mode
-```bash
+2. Run in development mode
+``` bash
 npm run dev
 ```
-## Build docker image
-## Run locally docker
+
+---
+
+## 🐳 Running with Docker
+### Build and run the image locally
 ```bash
-# Build docker image
+# Build the Docker image
 docker build -t yt-dl-front .
 
-# Run docker image
+# Run the container
 docker run -p 3000:3000 yt-dl-front
 ```
 
-## Publish image
+---
+
+## 📦 Publishing the Image
+### Build and push to your Docker Hub repository
 ```bash
-# Build image in repository
+# Build the image with your Docker Hub username
 docker build -t <DOCKER_USER>/yt-dl-front .
 
-# Push image in repository
+# Push the image
 docker push <DOCKER_USER>/yt-dl-front
 ```
